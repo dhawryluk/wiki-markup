@@ -1,0 +1,54 @@
+
+body {
+  background-color: bisque;
+  margin: auto;
+  text-align: justify;
+  padding: 20px;
+  max-width: 650px;
+
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.first-paragraph {
+  border-left: 3px solid darkolivegreen;
+  padding-left: 10px;
+  text-indent: 7px;
+  text-wrap: inherit;
+  font-style: italic;
+}
+
+.first-paragraph::first-letter {
+  font-weight: 900;
+  font-size: 200%;
+  color: darkolivegreen;
+}
+
+a {
+  color: brown;
+}
+
+a:hover {
+  background-color: white;
+  color: darkolivegreen;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+ul li::before {
+  content: "🔘";
+  display: inline-block;
+  margin-right: 0.2rem;
+}
