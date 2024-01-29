@@ -18,11 +18,14 @@ h2 {
   font-weight: lighter;
 }
 
+img {
+  width: 100%;
+}
+
 .first-paragraph {
   border-left: 3px solid darkolivegreen;
   padding-left: 10px;
   text-indent: 7px;
-  text-wrap: inherit;
   font-style: italic;
 }
 
@@ -51,4 +54,32 @@ ul li::before {
   content: "🔘";
   display: inline-block;
   margin-right: 0.2rem;
+}
+
+
+@media screen and (min-width: 40em)   {
+  body {
+    background-color: rgb(255, 234, 209);
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .first-paragraph {
+    border: none;
+  }
+
 }
